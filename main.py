@@ -10,10 +10,6 @@ import keyboards as kb
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-# @dp.callback_query(F.data == 'news')
-# async def news(callback: CallbackQuery):
-#    await callback.answer('Новости подгружаются', show_alert=True)
-#    await callback.message.answer('Вот свежие новости!')
 
 @dp.callback_query(F.data == 'news')
 async def news(callback: CallbackQuery):
